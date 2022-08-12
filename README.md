@@ -1,2 +1,2 @@
 # e-commerce
-Functional e-commerce based on the courses of Platzi.
+Functional e-commerce based on designs
