@@ -29,7 +29,7 @@ body {
   border-bottom: 1px solid var(--text-input-field);
 }
 
-.menu {
+.hambur-menu {
   display: none;
 }
 
@@ -194,7 +194,7 @@ body {
 
 
 @media (max-width: 640px) {
-  .menu {
+  .hambur-menu {
     display: block;
   }
 
@@ -203,6 +203,16 @@ body {
   }
 
   .navbar-email {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) {
+  .mobile-menu {
     display: none;
   }
 }
