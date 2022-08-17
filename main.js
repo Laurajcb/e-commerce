@@ -32,7 +32,6 @@ function toggleOrderDetailMenu() {
   orderDetailMenu.classList.toggle('inactive');
 }
 
-
 // query for cards-container
 
 const cardsContainer = document.querySelector('.cards-container');
@@ -53,34 +52,54 @@ productList.push({
   price: 230,
   img: 'https://images.pexels.com/photos/2647714/pexels-photo-2647714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 });
+productList.push({
+  name: 'Bike',
+  price: 120,
+  img: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+});
+productList.push({
+  name: 'Mirror',
+  price: 80,
+  img: 'https://images.pexels.com/photos/1528975/pexels-photo-1528975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+});
+productList.push({
+  name: 'Table set',
+  price: 230,
+  img: 'https://images.pexels.com/photos/2647714/pexels-photo-2647714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+});
 
-for (product of productList) {
-  const productCart = document.createElement('div');
-  productCart.classList.add('product-card');
+// Funtion to render a list of products
+function renderProducts(arr) {
+  for (product of arr) {
+    const productCart = document.createElement('div');
+    productCart.classList.add('product-card');
 
-  const productImg = document.createElement('img');
-  productImg.setAttribute('src', product.img);
+    const productImg = document.createElement('img');
+    productImg.setAttribute('src', product.img);
 
-  const productInfo = document.createElement('div');
-  productInfo.classList.add('product-info');
+    const productInfo = document.createElement('div');
+    productInfo.classList.add('product-info');
 
-  const productInfoDiv = document.createElement('div');
-  const productInfoPrice = document.createElement('p');
-  productInfoPrice.innerText = `$ ${product.price}`;
-  const productInfoName = document.createElement('p');
-  productInfoName.innerText = product.name;
-  productInfoDiv.appendChild(productInfoPrice);
-  productInfoDiv.appendChild(productInfoName);
+    const productInfoDiv = document.createElement('div');
+    const productInfoPrice = document.createElement('p');
+    productInfoPrice.innerText = `$ ${product.price}`;
+    const productInfoName = document.createElement('p');
+    productInfoName.innerText = product.name;
+    productInfoDiv.appendChild(productInfoPrice);
+    productInfoDiv.appendChild(productInfoName);
 
-  const productInfoFigure = document.createElement('figure');
-  const ProductFigureImg = document.createElement('img');
-  ProductFigureImg.setAttribute('src', './assets/icons/bt_add_to_cart.svg');
-  productInfoFigure.appendChild(ProductFigureImg);
+    const productInfoFigure = document.createElement('figure');
+    const ProductFigureImg = document.createElement('img');
+    ProductFigureImg.setAttribute('src', './assets/icons/bt_add_to_cart.svg');
+    productInfoFigure.appendChild(ProductFigureImg);
 
-  productInfo.appendChild(productInfoDiv);
-  productInfo.appendChild(productInfoFigure);
+    productInfo.appendChild(productInfoDiv);
+    productInfo.appendChild(productInfoFigure);
 
-  productCart.appendChild(productImg);
-  productCart.appendChild(productInfo);
-  cardsContainer.appendChild(productCart);
+    productCart.appendChild(productImg);
+    productCart.appendChild(productInfo);
+    cardsContainer.appendChild(productCart);
+  }
 }
+renderProducts(productList);
+
