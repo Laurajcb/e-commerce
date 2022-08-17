@@ -33,7 +33,6 @@ function toggleOrderDetailMenu() {
 }
 
 // query for cards-container
-
 const cardsContainer = document.querySelector('.cards-container');
 
 const productList = [];
@@ -68,7 +67,7 @@ productList.push({
   img: 'https://images.pexels.com/photos/2647714/pexels-photo-2647714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 });
 
-// Funtion to render a list of products
+// Funtion to render a list of products .append(to add numerous elements at same time)
 function renderProducts(arr) {
   for (product of arr) {
     const productCart = document.createElement('div');
@@ -78,7 +77,7 @@ function renderProducts(arr) {
     productImg.setAttribute('src', product.img);
 
     const productInfo = document.createElement('div');
-    productInfo.classList.add('product-info');
+    productInfo.classList.add('product-basic-info');
 
     const productInfoDiv = document.createElement('div');
     const productInfoPrice = document.createElement('p');
@@ -102,4 +101,3 @@ function renderProducts(arr) {
   }
 }
 renderProducts(productList);
-
