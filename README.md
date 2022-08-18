@@ -14,4 +14,4 @@ also have the integration of those components in one funtional file, other one f
 ![Mobile view](https://github.com/Laurajcb/e-commerce/blob/main/assets/mobileV.png)
 
 
-### By [Laurajcb] (https://www.linkedin.com/in/laura-callejas-she-her-16b710208/)
+### By ![Laurajcb](https://www.linkedin.com/in/laura-callejas-she-her-16b710208/)
