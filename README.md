@@ -9,8 +9,8 @@ also have the integration of those components in one funtional file, other one f
 * This proyect was made by Laura Callejas with the guide of platzi
 
 
-* ![Desktop view] (https://github.com/Laurajcb/e-commerce/blob/main/assets/127.0.0.1_5500_%20(1).png)
+* ! [Desktop view] (https://github.com/Laurajcb/e-commerce/blob/main/assets/127.0.0.1_5500_%20(1).png)
 
-* ![Mobile view] (https://github.com/Laurajcb/e-commerce/blob/main/assets/mobileV.png)
+* ! [Mobile view] (https://github.com/Laurajcb/e-commerce/blob/main/assets/mobileV.png)
 
 ### By [Laurajcb] (https://www.linkedin.com/in/laura-callejas-she-her-16b710208/)
